@@ -14,7 +14,7 @@ const Login = () => {
     name: "",
   });
   const provider = new firebase.auth.GoogleAuthProvider();
-  console.log(signeIn);
+  //signUp with google
   const signInGoogle = () => {
     firebase
       .auth()
@@ -27,6 +27,18 @@ const Login = () => {
         };
         setSigneIn(signInGoogle);
       })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  //signUp with gitHub
+  const provider2 = new firebase.auth.GithubAuthProvider();
+  const signInGitHub = () => {
+    firebase
+      .auth()
+      .signInWithPopup(provider2)
+      .then((result) => {})
       .catch((error) => {
         console.log(error);
       });
@@ -83,7 +95,11 @@ const Login = () => {
           Login with Google
         </Button>
         <br />
-        <Button variant="outline-secondary" type="submit">
+        <Button
+          onClick={signInGitHub}
+          variant="outline-secondary"
+          type="submit"
+        >
           Login with GitHub
         </Button>
       </div>
