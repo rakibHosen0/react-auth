@@ -1,0 +1,24 @@
+.ride-card {
+  width: 250px;
+  height: 240px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.ride-card:hover {
+  border: 1px solid rgb(182, 180, 180);
+}
+.card-img {
+  text-align: center;
+  padding: 2rem;
+}
+.ride-card img {
+  width: 70%;
+}
+.card-title {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .ride-card {
+    margin-bottom: 2rem;
+  }
+}

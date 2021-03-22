@@ -1,0 +1,12 @@
+.btn {
+  background-color: rgb(228, 87, 31) !important;
+  border: none !important;
+  margin-left: 1rem;
+  background-color: transparent;
+}
+.band-name {
+  font-weight: bold;
+}
+.navbar-border {
+  border-bottom: 1.5px solid rgb(238, 235, 235);
+}

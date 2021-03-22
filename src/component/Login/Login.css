@@ -1,0 +1,36 @@
+.login-from {
+  width: 30rem;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.field {
+  border: none;
+}
+.login-btn {
+  margin-right: 10px;
+}
+.login-container h2 {
+  padding-bottom: 1rem;
+}
+.login-container p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.login-container .login-btn {
+  width: 90%;
+  margin-right: 12px;
+}
+.continue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.continue Button {
+  border-radius: 30px;
+  background-color: white;
+}
